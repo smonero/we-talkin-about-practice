@@ -1,5 +1,6 @@
 // magic function made by stefanpochmann to split up big and small vs even and odd
 
+// BAD SOLUTION LOL - for real solution go to bottom of file
 int getFancyVal(std::vector<int>& nums, int index) {
     int doubleIndexPlusOne = 2 * i + 1;
 

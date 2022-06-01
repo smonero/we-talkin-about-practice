@@ -7,7 +7,7 @@
 //degree of 1 is our start point
 //also keep track of all nodes
 
-
+// check if all visited or size or whatever
 
 class Solution {
     public:
