@@ -21,3 +21,26 @@ string cursorRight(int k) {
     }
     return before.substr(before.size() - min((int)before.size(), 10));
 }
+
+int main()
+{
+    addText("hello");
+    addText("world");
+    std::cout << "before is " << before << std::endl;
+    std::cout << "after is " << after << std::endl;
+    std::cout << "moving cursor left 1" << std::endl;
+    std::string curr = cursorLeft(1);
+    std::cout << curr << std::endl;
+    std::cout << "before is " << before << std::endl;
+    std::cout << "after is " << after << std::endl;
+    std::cout << "moving cursor right 5" << std::endl;
+    curr = cursorRight(5);
+    std::cout << curr << std::endl;
+    
+    std::cout << "before is " << before << std::endl;
+    std::cout << "after is " << after << std::endl;
+    std::cout << "deleting 2 " << std::endl;
+    deleteText(2);
+    std::cout << "before is " << before << std::endl;
+    std::cout << "after is " << after << std::endl;
+}
